@@ -36,7 +36,7 @@ class ProfileCreator:
             ('email', "What is your email address?", 'email'),
             ('phone', "What is your phone number?", 'phone'),
             ('occupation', "What is your current occupation?", 'text'),
-            ('skills', "What is your skills? (separate with and)", 'list'),
+            ('skills', "What are your skills? (separate with and)", 'list'),
             ('education', "What is your highest education level?", 'text'),
             ('location', "Where are you located?", 'text'),
         ]
@@ -52,7 +52,7 @@ class ProfileCreator:
             'text': lambda x: len(x) >= 2,
             'number': lambda x: x.isdigit() and 0 <= int(x) <= 99,
             'email': lambda x: bool(re.match(r'^[\w\.-]+@[\w\.-]+\.\w+$', x)),
-            'phone': lambda x: bool(re.match(r'^\+?1?\d{9,15}$', x.replace('-', '').replace(' ', ''))),
+            'phone': lambda x: bool(re.match(r'^\d{10}$', x.replace('-', '').replace(' ', ''))),  # Only 10 digits
             'list': lambda x: all(len(item.strip()) > 0 for item in x.split(','))
         }
         

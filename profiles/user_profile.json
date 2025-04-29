@@ -1,14 +1,16 @@
 {
   "name": "Shivani",
-  "age": 24,
-  "email": "sk@gmail.com",
-  "phone": "1234567 89",
+  "age": 26,
+  "email": "shivani@gmail.com",
+  "phone": "12345 12345",
   "occupation": "electrician",
   "skills": [
-    "electrical wiring troubleshooting",
-    "installation repair"
+    "electrical wiring",
+    "troubleshooting",
+    "installation",
+    "repair"
   ],
-  "education": "BTech",
+  "education": "10th standard",
   "location": "Pune Maharashtra India",
-  "created_at": "2025-04-29T12:50:01.881310"
+  "created_at": "2025-04-29T13:07:08.647929"
 }
